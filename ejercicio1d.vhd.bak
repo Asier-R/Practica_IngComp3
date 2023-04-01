@@ -22,8 +22,8 @@ architecture ejercicio1d of ejercicio1d is
     	end component OR2;
 
 	component NOT1 is
-		port(   out_0      : out std_logic;
-                	in_0, in_1 : in  std_logic);
+		port(   out_0 : out std_logic;
+                	in_0  : in  std_logic);
     	end component NOT1;
 	
 	-- Senales fucion logica F

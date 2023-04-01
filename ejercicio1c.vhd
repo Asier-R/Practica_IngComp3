@@ -2,7 +2,6 @@
 -- F = abc+cd
 -- G = abc'
 
-
 -- Puerta AND de dos entradas
 library IEEE;
 use IEEE.std_logic_1164.all;

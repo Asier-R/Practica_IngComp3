@@ -1,6 +1,7 @@
 -- Arquitectura del circuito logico implementando las puertas de las funciones:
 -- F = abc+cd
 -- G = abc'
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 

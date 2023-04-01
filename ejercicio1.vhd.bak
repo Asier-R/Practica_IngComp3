@@ -1,0 +1,16 @@
+--Funciones logicas
+-- F = abc+cd
+-- G = abc'
+library IEEE;
+use IEEE.stda_logic_1164.all;
+
+entity ejercicio1 is port
+	(F, G    : out std_logic;
+	 a, b, c : in  std_logic);
+en entity ejercicio;
+
+architecture ejercicio1 of ejercicio1 is
+begin
+	F <= (a and b and c) or (c and d);
+	G <= (a and b) and (not c);
+end architecture ejercicio1;

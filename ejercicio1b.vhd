@@ -1,13 +1,13 @@
---Funciones logicas
+-- Funciones logicas
 -- F = abc+cd
 -- G = abc'
 library IEEE;
-use IEEE.stda_logic_1164.all;
+use IEEE.std_logic_1164.all;
 
 entity ejercicio1b is port
-	(F, G    : out std_logic;
-	 a, b, c : in  std_logic);
-en entity ejercicio1b;
+	(F, G       : out std_logic;
+	 a, b, c, d : in  std_logic);
+end entity ejercicio1b;
 
 architecture ejercicio1b of ejercicio1b is
 begin

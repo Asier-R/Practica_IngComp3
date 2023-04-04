@@ -2,47 +2,44 @@
 -- F = abc+cd
 -- G = abc'
 
-
 -- Puerta AND de dos entradas
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity AND_2 is port
-	(x    : out std_logic;
-	 a, b : in  std_logic);
-end entity AND_2;
+entity AND2 is port
+	(out_0      : out std_logic;
+	 in_0, in_1 : in  std_logic);
+end entity AND2;
 
-architecture AND_2 of AND_2 is
+architecture AND2 of AND2 is
 begin
-	x <= (a and b);
-end architecture AND_2;
-
+	out_0 <= (in_0 and in_1);
+end architecture AND2;
 
 -- Puerta OR de dos entradas
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity OR_2 is port
-	(x    : out std_logic;
-	 a, b : in  std_logic);
-end entity OR_2;
+entity OR2 is port
+	(out_0      : out std_logic;
+	 in_0, in_1 : in  std_logic);
+end entity OR2;
 
-architecture OR_2 of OR_2 is
+architecture OR2 of OR2 is
 begin
-	x <= (a or b);
-end architecture OR_2;
-
+	out_0 <= (in_0 or in_1);
+end architecture OR2;
 
 -- Puerta NOR
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity NOT_1 is port
-	(x : out std_logic;
-	 a : in  std_logic);
-end entity NOT_1;
+entity NOT1 is port
+	(out_0 : out std_logic;
+	 in_0  : in  std_logic);
+end entity NOT1;
 
-architecture NOT_1 of NOR_1 is
+architecture NOT1 of NOR1 is
 begin
-	x <= (not a);
-end architecture NOT_1;
+	out_0 <= (not in_0);
+end architecture NOT1;

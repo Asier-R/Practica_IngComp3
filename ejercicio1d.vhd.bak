@@ -1,6 +1,7 @@
 -- Arquitectura del circuito logico implementando las puertas de las funciones:
 -- F = abc+cd
 -- G = abc'
+
 library IEEE;
 use IEEE.std_logic_1164.all;
 
@@ -11,20 +12,20 @@ end entity ejercicio1d;
 
 architecture ejercicio1d of ejercicio1d is
  
-	component AND2 is
+	component AND_2 is
 		port(   out_0      : out std_logic;
                 	in_0, in_1 : in  std_logic);
-    	end component AND2;
+    	end component AND_2;
 
-	component OR2 is
+	component OR_2 is
 		port(   out_0      : out std_logic;
                 	in_0, in_1 : in  std_logic);
-    	end component OR2;
+    	end component OR_2;
 
-	component NOT1 is
+	component NOT_1 is
 		port(   out_0 : out std_logic;
                 	in_0  : in  std_logic);
-    	end component NOT1;
+    	end component NOT_1;
 	
 	-- Senales fucion logica F
 	signal s_and_bc   : std_logic;
@@ -37,13 +38,13 @@ architecture ejercicio1d of ejercicio1d is
 
 begin
 	-- Puertas funcion logica F
-	and_BC    : AND2 port map ( out_0 => s_and_bc, in_0 => b, in_1 => c );
-	and_ABC   : AND2 port map ( out_0 => s_and_abc, in_0 => a, in_1 => s_and_bc );
-	and_CD    : AND2 port map ( out_0 => s_and_cd, in_0 => c, in_1 => d );
-	or_ABC_CD : OR2  port map ( out_0 => F, in_0 => s_and_abc, in_1 => s_and_cd );
+	and_BC    : AND_2 port map ( out_0 => s_and_bc,  in_0 => b,         in_1 => c );
+	and_ABC   : AND_2 port map ( out_0 => s_and_abc, in_0 => a,         in_1 => s_and_bc );
+	and_CD    : AND_2 port map ( out_0 => s_and_cd,  in_0 => c,         in_1 => d );
+	or_ABC_CD : OR_2  port map ( out_0 => F,         in_0 => s_and_abc, in_1 => s_and_cd );
 
 	-- Puertas funcion logica G
-	and_AB     : AND2 port map ( out_0 => s_and_ab, in_0 => a, in_1 => b );
-	not_c      : NOT1 port map ( out_0 => s_not_c, in_0 => c );
-	and_ABnotC : AND2 port map ( out_0 => G, in_0 => s_and_ab, in_1 => s_not_c );
+	and_AB     : AND_2 port map ( out_0 => s_and_ab, in_0 => a, in_1 => b );
+	not_c      : NOT_1 port map ( out_0 => s_not_c, in_0 => c );
+	and_ABnotC : AND_2 port map ( out_0 => G, in_0 => s_and_ab, in_1 => s_not_c );
 end architecture ejercicio1d;

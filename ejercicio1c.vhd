@@ -7,41 +7,39 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity AND_2 is port
-	(x    : out std_logic;
-	 a, b : in  std_logic);
+	(out_0      : out std_logic;
+	 in_0, in_1 : in  std_logic);
 end entity AND_2;
 
 architecture AND_2 of AND_2 is
 begin
-	x <= (a and b);
+	out_0 <= (in_0 and in_1);
 end architecture AND_2;
-
 
 -- Puerta OR de dos entradas
 library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity OR_2 is port
-	(x    : out std_logic;
-	 a, b : in  std_logic);
+	(out_0      : out std_logic;
+	 in_0, in_1 : in  std_logic);
 end entity OR_2;
 
 architecture OR_2 of OR_2 is
 begin
-	x <= (a or b);
+	out_0 <= (in_0 or in_1);
 end architecture OR_2;
-
 
 -- Puerta NOR
 library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity NOT_1 is port
-	(x : out std_logic;
-	 a : in  std_logic);
+	(out_0 : out std_logic;
+	 in_0  : in  std_logic);
 end entity NOT_1;
 
-architecture NOT_1 of NOR_1 is
+architecture NOT_1 of NOT_1 is
 begin
-	x <= (not a);
+	out_0 <= (not in_0);
 end architecture NOT_1;

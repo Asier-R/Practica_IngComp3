@@ -11,7 +11,7 @@ end entity ejercicio2b;
 architecture ejercicio2b of ejercicio2b is
 begin
 	
-	y <= a-b when ctrl='0' else
+	y <= a+(not b)+1 when ctrl='0' else
 	     a+b;
 
 end architecture ejercicio2b;

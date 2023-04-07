@@ -30,7 +30,7 @@ begin
 	out_0 <= (in_0 or in_1);
 end architecture OR_2;
 
--- Puerta NOR
+-- Puerta NOT
 library IEEE;
 use IEEE.std_logic_1164.all;
 

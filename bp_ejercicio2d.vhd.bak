@@ -1,6 +1,4 @@
--- Banco de pruebas para ejercicio 1b y 1d
--- F = abc+cd
--- G = abc'
+-- Banco de pruebas para ejercicio 2b y 2c
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -12,39 +10,35 @@ end entity bp_ejercicio1e;
 architecture bp_ejercicio1e of bp_ejercicio1e is
 
 	-- Circuito disenado mediante funciones logicas
-	component ejercicio1b is port
-		( F, G       : out std_logic;
-		  a, b, c, d : in  std_logic);
-	end component ejercicio1b;
+	component ejercicio2b is port
+		( y          : out std_logic;
+		  a, b, ctrl : in  std_logic);
+	end component ejercicio2b;
 	
 	-- Circuito disenado mediante puertas logicas
-	component ejercicio1d is port
-		( F, G       : out std_logic;
-		  a, b, c, d : in  std_logic);
-	end component ejercicio1d;
+	component ejercicio2c is port
+		( y          : out std_logic;
+		  a, b, ctrl : in  std_logic);
+	end component ejercicio2c;
 
 	signal F_b, G_b, F_d, G_d     : std_logic; -- Salidas UUT de cada circuito
-	signal in_a, in_b, in_c, in_d : std_logic; -- Entradas UUT para ambos circuitos
+	signal in_a, in_b, in_ctrl : std_logic; -- Entradas UUT para ambos circuitos
 
 begin
 
-	-- Instancia UUT circuito de funciones logicas
-	uut_b : component ejercicio1b port map
-		( F => F_b,
-		  G => G_b,
-		  a => in_a, 
-		  b => in_b,
-		  c => in_c, 
-		  d => in_d );
+	-- UUT circuito con operador resta
+	uut_b : component ejercicio2b port map
+		( y    => F_b,
+		  ctrl => G_b,
+		  a    => in_a, 
+		  b    => in_b );
 
-	-- Instancia UUT circuito de puertas logicas
-	uut_d : component ejercicio1d port map
-		( F => F_d,
-		  G => G_d,
-		  a => in_a, 
-		  b => in_b,
-		  c => in_c, 
-		  d => in_d );
+	-- UUT circuito sin operador resta
+	uut_c : component ejercicio2c port map
+		( y    => F_b,
+		  ctrl => G_b,
+		  a    => in_a, 
+		  b    => in_b );
 	
 	-- Generacion del vector de test
 	gen_vec_test: process 

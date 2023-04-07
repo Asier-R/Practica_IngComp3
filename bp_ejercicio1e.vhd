@@ -28,7 +28,7 @@ architecture bp_ejercicio1e of bp_ejercicio1e is
 
 begin
 
-	-- Instancias UUT circuito de funciones logicas
+	-- UUT circuito de funciones logicas
 	uut_b : component ejercicio1b port map
 		( F => F_b,
 		  G => G_b,
@@ -37,7 +37,7 @@ begin
 		  c => in_c, 
 		  d => in_d );
 
-	-- Instancias UUT circuito de puertas logicas
+	-- UUT circuito de puertas logicas
 	uut_d : component ejercicio1d port map
 		( F => F_d,
 		  G => G_d,

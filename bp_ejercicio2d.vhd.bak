@@ -4,59 +4,82 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity bp_ejercicio1e is
-end entity bp_ejercicio1e;
+entity bp_ejercicio2d is
+end entity bp_ejercicio2d;
 
-architecture bp_ejercicio1e of bp_ejercicio1e is
+architecture bp_ejercicio2d of bp_ejercicio2d is
 
 	-- Circuito disenado mediante funciones logicas
 	component ejercicio2b is port
-		( y          : out std_logic;
-		  a, b, ctrl : in  std_logic);
+		( y    : out signed (7 downto 0);
+		  a, b : in  signed (7 downto 0);
+		  ctrl : in  bit );
 	end component ejercicio2b;
 	
 	-- Circuito disenado mediante puertas logicas
 	component ejercicio2c is port
-		( y          : out std_logic;
-		  a, b, ctrl : in  std_logic);
+		( y   : out signed (7 downto 0);
+		 a, b : in  signed (7 downto 0);
+		 ctrl : in  bit );
 	end component ejercicio2c;
 
-	signal F_b, G_b, F_d, G_d     : std_logic; -- Salidas UUT de cada circuito
-	signal in_a, in_b, in_ctrl : std_logic; -- Entradas UUT para ambos circuitos
+	signal y_b, y_c   : signed (7 downto 0); -- Salidas UUT de cada circuito
+	signal in_a, in_b : signed (7 downto 0); -- Entradas UUT para ambos circuitos
+	signal in_ctrl    : bit; 
 
 begin
 
 	-- UUT circuito con operador resta
 	uut_b : component ejercicio2b port map
-		( y    => F_b,
-		  ctrl => G_b,
+		( y    => y_b,
+		  ctrl => in_ctrl,
 		  a    => in_a, 
 		  b    => in_b );
 
 	-- UUT circuito sin operador resta
 	uut_c : component ejercicio2c port map
-		( y    => F_b,
-		  ctrl => G_b,
+		( y    => y_c,
+		  ctrl => in_ctrl,
 		  a    => in_a, 
 		  b    => in_b );
 	
-	-- Generacion del vector de test
+	-- Vectores de test
 	gen_vec_test: process 
-		variable test_in : unsigned (3 downto 0); -- Vector de test
+
+		type matrizTest is array (0 to 7, 0 to 2) of signed (7 downto 0);
+		variable vectores : matrizTest := (
+			("00000000","00000000","00000000"), --pruebas
+			("00000000","00000000","00000001"),
+			("00000011","00000001","00000000"),
+			("00000011","00000001","00000001"),
+			("10001000","00010010","00000000"),
+			("10001000","00010010","00000001"),
+			("11111111","00000001","00000000"),
+			("11111111","00000001","00000001")
+		);
+
+		-- Varibales auxiliares test
+		variable t_a    : signed (7 downto 0);
+		variable t_b    : signed (7 downto 0);
+		variable t_ctrl : signed (7 downto 0);
+
 	begin
-		test_in := B"0000";
-		for count in 0 to 15 loop
-			in_a <= test_in(3);
-			in_b <= test_in(2);
-			in_c <= test_in(1);
-			in_d <= test_in(0);
-			wait for 10 ns;
-			test_in := test_in +1;
+
+		for i in 0 to 7 loop
+
+			report "operando a=" & intege'image(to_integer(vectores(i,0)));
+
+			in_a    <= vectores(i,0);
+			in_b    <= vectores(i,1);
+			in_ctrl <= to_bit(vectores(i,2)(0));
+			
 		end loop;
-		wait; -- Finalizar
+
+		wait; -- Fin de test
+		
 	end process gen_vec_test;
 
-end architecture bp_ejercicio1e;
+end architecture bp_ejercicio2d;
 	
 
 

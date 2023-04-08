@@ -118,7 +118,7 @@ Abp_ejercicio1e
 R18
 R1
 R2
-Z25 DEx4 work 14 bp_ejercicio1e 0 22 I@hhB4i4BFm1W7FjSz<;V2
+DEx4 work 14 bp_ejercicio1e 0 22 I@hhB4i4BFm1W7FjSz<;V2
 !i122 134
 l27
 L10 48
@@ -134,14 +134,57 @@ R24
 !i113 1
 R11
 R12
+Ebp_ejercicio2d
+Z25 w1680944673
+R18
+R1
+R2
+!i122 186
+R3
+Z26 8C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\bp_ejercicio2d.vhd
+Z27 FC:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\bp_ejercicio2d.vhd
+l0
+L7 1
+V`fW?f488ZeP@LdM7mPWV@2
+!s100 Kbg?>KmbcX[I2MMjGf<^T1
+R6
+32
+Z28 !s110 1680944676
+!i10b 1
+Z29 !s108 1680944676.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\bp_ejercicio2d.vhd|
+Z31 !s107 C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\bp_ejercicio2d.vhd|
+!i113 1
+R11
+R12
+Abp_ejercicio2d
+R18
+R1
+R2
+Z32 DEx4 work 14 bp_ejercicio2d 0 22 `fW?f488ZeP@LdM7mPWV@2
+!i122 186
+l30
+L10 73
+V^jINWRIg?6<eDURQLD<cd2
+!s100 EkGc_El>aFC1GOYH?FlhA2
+R6
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
 Eejercicio1b
-Z26 w1680343501
+Z33 w1680343501
 R1
 R2
 !i122 126
 R3
-Z27 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd
-Z28 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd
+Z34 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd
+Z35 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd
 l0
 L8 1
 V[:D122G4;`QfNVbW:A9]<1
@@ -151,8 +194,8 @@ R6
 R15
 !i10b 1
 R16
-Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd|
-Z30 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd|
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd|
+Z37 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd|
 !i113 1
 R11
 R12
@@ -170,19 +213,19 @@ R6
 R15
 !i10b 1
 R16
-R29
-R30
+R36
+R37
 !i113 1
 R11
 R12
 Eejercicio1d
-Z31 w1680616561
+Z38 w1680616561
 R1
 R2
 !i122 128
 R3
-Z32 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd
-Z33 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd
+Z39 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd
+Z40 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd
 l0
 L8 1
 V6@HPZ;>XCL0_ImFYDKS943
@@ -192,8 +235,8 @@ R6
 R15
 !i10b 1
 R16
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd|
-Z35 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd|
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd|
+Z42 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd|
 !i113 1
 R11
 R12
@@ -211,20 +254,20 @@ R6
 R15
 !i10b 1
 R16
-R34
-R35
+R41
+R42
 !i113 1
 R11
 R12
 Eejercicio2b
-Z36 w1680852220
+Z43 w1680852220
 R18
 R1
 R2
 !i122 131
 R3
-Z37 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd
-Z38 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd
+Z44 8C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd
+Z45 FC:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd
 l0
 L5 1
 VJlK47m9o`L<0FXeEK2f2P1
@@ -234,8 +277,8 @@ R6
 R15
 !i10b 1
 R16
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd|
-Z40 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd|
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd|
+Z47 !s107 C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd|
 !i113 1
 R11
 R12
@@ -254,13 +297,13 @@ R6
 R15
 !i10b 1
 R16
-R39
-R40
+R46
+R47
 !i113 1
 R11
 R12
 Enor_1
-Z41 w1680340640
+Z48 w1680340640
 R1
 R2
 !i122 6
@@ -273,9 +316,9 @@ V9FoiTfz9H1UJMb72V;NQ_1
 !s100 ^54iXH8c5h?jojQ`5b1T^1
 R6
 32
-Z42 !s110 1680340647
+Z49 !s110 1680340647
 !i10b 1
-Z43 !s108 1680340647.000000
+Z50 !s108 1680340647.000000
 R9
 R10
 !i113 1
@@ -285,7 +328,7 @@ Anot_1
 w1680343499
 R1
 R2
-Z44 DEx4 work 5 nor_1 0 22 9FoiTfz9H1UJMb72V;NQ_1
+Z51 DEx4 work 5 nor_1 0 22 9FoiTfz9H1UJMb72V;NQ_1
 !i122 83
 l45
 L44 4
@@ -304,7 +347,7 @@ R12
 Anor_1
 R1
 R2
-R44
+R51
 !i122 6
 l46
 L45 4
@@ -312,9 +355,9 @@ VQ;EIdkHm@LO244fnnGYk@3
 !s100 >PD`FdT3QRHCE:o<CB[Z41
 R6
 32
-R42
+R49
 !i10b 1
-R43
+R50
 R9
 R10
 !i113 1
@@ -329,7 +372,7 @@ R3
 R4
 R5
 l0
-Z45 L37 1
+Z52 L37 1
 VG^T_?X@@^OYEc:4zG]9`O2
 !s100 =fl8BlARVKleogAL497Mm0
 R6
@@ -348,7 +391,7 @@ R2
 DEx4 work 4 not1 0 22 Rh2F?nme0?jm<km9IA6NM0
 !i122 95
 l43
-Z46 L42 4
+Z53 L42 4
 Vj`<akFA[h;E];iU_=oTfn2
 !s100 78l4;<OFbc1X@mmoJo3k52
 R6
@@ -371,7 +414,7 @@ R3
 R4
 R5
 l0
-R45
+R52
 Vg_@:f_VJR>87P1zTETnEk0
 !s100 Y0nP4ZF[1C07z4O=65J_F2
 R6
@@ -390,7 +433,7 @@ R2
 DEx4 work 5 not_1 0 22 g_@:f_VJR>87P1zTETnEk0
 !i122 127
 l43
-R46
+R53
 VH`6J@OeY;FdITlUd=fF@02
 !s100 KPon91Bh=LZ8SI>^YZZ1<0
 R6
@@ -412,7 +455,7 @@ R3
 R4
 R5
 l0
-Z47 L23 1
+Z54 L23 1
 Vfg5g5[h30G4?S6OSdlIT93
 !s100 ND9VF[mZEF=koPADWz[kQ2
 R6
@@ -431,7 +474,7 @@ R2
 DEx4 work 3 or2 0 22 fg5g5[h30G4?S6OSdlIT93
 !i122 103
 l29
-Z48 L28 4
+Z55 L28 4
 VLVTGB9iNIW41=UicaBWQS3
 !s100 k78^644^Goom^I<<=aVD13
 R6
@@ -453,7 +496,7 @@ R3
 R4
 R5
 l0
-R47
+R54
 VPPD1khTK?nQJV4jkBP[H31
 !s100 H8djNZ0:NG:dki4@=5zA_3
 R6
@@ -472,7 +515,7 @@ R2
 DEx4 work 4 or_2 0 22 PPD1khTK?nQJV4jkBP[H31
 !i122 127
 l29
-R48
+R55
 VY2OU6G`Pj28O@BeJQhXnb3
 !s100 6Gb]5g<BjI6CLVNX^kcUF0
 R6

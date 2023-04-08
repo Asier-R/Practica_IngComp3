@@ -59,24 +59,55 @@ begin
 		);
 
 		-- Varibales auxiliares test
-		variable t_a    : signed (7 downto 0);
-		variable t_b    : signed (7 downto 0);
-		variable t_ctrl : signed (7 downto 0);
+		variable error_cnt_b  : integer := 0;
+		variable error_cnt_c  : integer := 0;
 
 	begin
 
 		for i in 0 to 7 loop
 
-			report "CONJUNTO " & integer'image(i+1);
-			report "input: a=" & integer'image((-1)*to_integer(vectores(i,0))) & " b=" & integer'image((-1)*to_integer(vectores(i,1))) & " ctrl=" & bit'image(to_bit(vectores(i,2)(0)));
+			report "... CONJUNTO " & integer'image(i+1) & " ...";
+			report "Input: a=" & integer'image((-1)*to_integer(vectores(i,0))) & " b=" & integer'image((-1)*to_integer(vectores(i,1))) & " ctrl=" & bit'image(to_bit(vectores(i,2)(0)));
+			
+			if ( to_bit(vectores(i,2)(0)) = '0' ) then 
+				report "Resultado esperado resta = " & integer'image( ( (-1)*to_integer(vectores(i,0) - vectores(i,1)) ) );
+			else
+				report "Resultado esperado suma  = " & integer'image( ( (-1)*to_integer(vectores(i,0) + vectores(i,1)) ) );
+			end if;
 
+			-- Asignar valores a señales de entrada
 			in_a    <= vectores(i,0);
 			in_b    <= vectores(i,1);
 			in_ctrl <= to_bit(vectores(i,2)(0));
 
-			wait for 10 ns;
+			wait for 5 ns;
+			
+			-- Validacion y recuento de errores circuito 2.b
+			case in_ctrl is
+				when '0' => 
+					if ( y_b = (in_a-in_b) ) then 
+						report "Test finalizado OK => Resultado = " & integer'image((-1)*to_integer(y_b));
+        				else 
+						report "Test finalizado KO => Resultado = " & integer'image((-1)*to_integer(y_b));
+						error_cnt_b  := error_cnt_b + 1;
+        				end if;
+				when others => 
+					if ( y_b = (in_a+in_b) ) then 
+						report "Test finalizado OK => Resultado = " & integer'image((-1)*to_integer(y_b));
+        				else 
+						report "Test finalizado KO => Resultado = " & integer'image((-1)*to_integer(y_b));
+						error_cnt_b  := error_cnt_b + 1;
+        				end if;
+			end case;
+        		
+			report "............................................";
+
+			wait for 10 ns; -- Tiempo arbitrario de espera entre iteraciones
 			
 		end loop;
+
+		report "Número de errores circuito 2.b: " & integer'image(error_cnt_b); 
+		report "Número de errores circuito 2.c: " & integer'image(error_cnt_c); 
 
 		wait; -- Fin de test
 		

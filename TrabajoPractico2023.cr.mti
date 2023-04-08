@@ -1,4 +1,13 @@
-{C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd}
+{C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/bp_ejercicio2d.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\bp_ejercicio2d.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bp_ejercicio2d
+-- Compiling architecture bp_ejercicio2d of bp_ejercicio2d
+
+} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1b.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,7 +24,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity bp_ejercicio1e
 -- Compiling architecture bp_ejercicio1e of bp_ejercicio1e
 
-} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1c.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1c.vhd}
+} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1c.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\ejercicio1c.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -27,7 +36,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Compiling entity NOT_1
 -- Compiling architecture NOT_1 of NOT_1
 
-} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2b.vhd}
+} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2b.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\ejercicio2b.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -35,6 +44,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity ejercicio2b
 -- Compiling architecture ejercicio2b of ejercicio2b
+
+} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Monst\Desktop\UNED\UNED_MegaSync\Asignaturas\2022-2023\Ingenieria de Computadores III\Practica Obligatoria\Codigo VHDL\ejercicio2c.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ejercicio2c
+-- Compiling architecture ejercicio2c of ejercicio2c
 
 } {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio1d.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
@@ -43,14 +61,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity ejercicio1d
 -- Compiling architecture ejercicio1d of ejercicio1d
-
-} {} {}} {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Monst/Desktop/UNED/UNED_MegaSync/Asignaturas/2022-2023/Ingenieria de Computadores III/Practica Obligatoria/Codigo VHDL/ejercicio2c.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2021.1 Compiler 2021.02 Feb  3 2021
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity ejercicio2b
--- Compiling architecture ejercicio2b of ejercicio2b
 
 } {} {}}

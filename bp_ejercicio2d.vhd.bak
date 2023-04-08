@@ -18,9 +18,9 @@ architecture bp_ejercicio2d of bp_ejercicio2d is
 	
 	-- Circuito disenado mediante puertas logicas
 	component ejercicio2c is port
-		( y   : out signed (7 downto 0);
-		 a, b : in  signed (7 downto 0);
-		 ctrl : in  bit );
+		( y    : out signed (7 downto 0);
+		  a, b : in  signed (7 downto 0);
+		  ctrl : in  bit );
 	end component ejercicio2c;
 
 	signal y_b, y_c   : signed (7 downto 0); -- Salidas UUT de cada circuito
@@ -48,14 +48,14 @@ begin
 
 		type matrizTest is array (0 to 7, 0 to 2) of signed (7 downto 0);
 		variable vectores : matrizTest := (
-			("00000000","00000000","00000000"), --pruebas
-			("00000000","00000000","00000001"),
-			("00000011","00000001","00000000"),
-			("00000011","00000001","00000001"),
-			("10001000","00010010","00000000"),
-			("10001000","00010010","00000001"),
-			("11111111","00000001","00000000"),
-			("11111111","00000001","00000001")
+			("00000000","00000000","00000000"), -- Conjunto 1
+			("00000000","00000000","00000001"), -- Conjunto 2
+			("00000011","00000001","00000000"), -- Conjunto 3
+			("00000011","00000001","00000001"), -- Conjunto 4
+			("10001000","00010010","00000000"), -- Conjunto 5
+			("10001000","00010010","00000001"), -- Conjunto 6
+			("11111111","00000001","00000000"), -- Conjunto 7
+			("11111111","00000001","00000001")  -- Conjunto 8
 		);
 
 		-- Varibales auxiliares test
@@ -67,11 +67,14 @@ begin
 
 		for i in 0 to 7 loop
 
-			report "operando a=" & intege'image(to_integer(vectores(i,0)));
+			report "CONJUNTO " & integer'image(i);
+			report "input: a=" & integer'image((-1)*to_integer(vectores(i,0))) & " b=" & integer'image((-1)*to_integer(vectores(i,1))) & " ctrl=" & bit'image(to_bit(vectores(i,2)(0)));
 
 			in_a    <= vectores(i,0);
 			in_b    <= vectores(i,1);
 			in_ctrl <= to_bit(vectores(i,2)(0));
+
+			wait for 10 ns;
 			
 		end loop;
 

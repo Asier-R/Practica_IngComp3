@@ -75,7 +75,7 @@ begin
 				report "Resultado esperado suma  = " & integer'image( ( (-1)*to_integer(vectores(i,0) + vectores(i,1)) ) );
 			end if;
 
-			-- Asignar valores a señales de entrada
+			-- Asignar valores a senales de entrada
 			in_a    <= vectores(i,0);
 			in_b    <= vectores(i,1);
 			in_ctrl <= to_bit(vectores(i,2)(0));
@@ -86,17 +86,29 @@ begin
 			case in_ctrl is
 				when '0' => 
 					if ( y_b = (in_a-in_b) ) then 
-						report "Test finalizado OK => Resultado = " & integer'image((-1)*to_integer(y_b));
+						report "Test finalizado OK => Resultado resta circuito 2.b = " & integer'image((-1)*to_integer(y_b));
         				else 
-						report "Test finalizado KO => Resultado = " & integer'image((-1)*to_integer(y_b));
+						report "Test finalizado KO => Resultado resta circuito 2.b = " & integer'image((-1)*to_integer(y_b));
 						error_cnt_b  := error_cnt_b + 1;
+        				end if;
+					if ( y_c = (in_a-in_b) ) then 
+						report "Test finalizado OK => Resultado resta circuito 2.c = " & integer'image((-1)*to_integer(y_c));
+        				else 
+						report "Test finalizado KO => Resultado resta circuito 2.c = " & integer'image((-1)*to_integer(y_c));
+						error_cnt_c  := error_cnt_c + 1;
         				end if;
 				when others => 
 					if ( y_b = (in_a+in_b) ) then 
-						report "Test finalizado OK => Resultado = " & integer'image((-1)*to_integer(y_b));
+						report "Test finalizado OK => Resultado suma circuito 2.b = " & integer'image((-1)*to_integer(y_b));
         				else 
-						report "Test finalizado KO => Resultado = " & integer'image((-1)*to_integer(y_b));
+						report "Test finalizado KO => Resultado suma circuito 2.b = " & integer'image((-1)*to_integer(y_b));
 						error_cnt_b  := error_cnt_b + 1;
+        				end if;
+					if ( y_c = (in_a-in_b) ) then 
+						report "Test finalizado OK => Resultado resta circuito 2.b = " & integer'image((-1)*to_integer(y_c));
+        				else 
+						report "Test finalizado KO => Resultado resta circuito 2.b = " & integer'image((-1)*to_integer(y_c));
+						error_cnt_c  := error_cnt_c + 1;
         				end if;
 			end case;
         		
@@ -106,8 +118,8 @@ begin
 			
 		end loop;
 
-		report "Número de errores circuito 2.b: " & integer'image(error_cnt_b); 
-		report "Número de errores circuito 2.c: " & integer'image(error_cnt_c); 
+		report "Numero de errores circuito 2.b: " & integer'image(error_cnt_b); 
+		report "Numero de errores circuito 2.c: " & integer'image(error_cnt_c); 
 
 		wait; -- Fin de test
 		
